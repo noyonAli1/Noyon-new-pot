@@ -2,7 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import About from "@/components/shared/About";
-
+import MyContact from "@/components/shared/MyContact";
+import MyExperience from "@/components/shared/MyExperience";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,6 +30,9 @@ export default function RootLayout({ children }) {
         <Navbar></Navbar>
         {children}
          <About></About>
+         
+          <MyExperience></MyExperience>
+          <MyContact></MyContact>
         </body>
     </html>
   );
